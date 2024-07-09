@@ -20,7 +20,7 @@ async function getWeather(city = null) {
   }
 
   try {
-    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=5`);
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=7`);
     if (!response.ok) {
       throw new Error('City not found');
     }
@@ -82,7 +82,7 @@ function displayWeather(data) {
     `;
   
 
-  let forecastWeather = '<h3>5-Day Forecast</h3><div class="forecast-container">';
+  let forecastWeather = '<h3>7-Day Forecast</h3><div class="forecast-container">';
   forecast.forEach(day => {
     forecastWeather += `
             <div class="forecast-day">
