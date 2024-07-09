@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+        <main>
+            <div id="search">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button onclick="getWeather()">Get Weather</button>
+            </div>
+            <div id="weather">
+                <!-- Weather data will be display here -->
+            </div>
+            <div id="error">
+                <!-- Error messages will be display here -->
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Weather App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
